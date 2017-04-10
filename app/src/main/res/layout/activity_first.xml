@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.michrosys.richard.ghostmodechatapp.FirstActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/bgoiff"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ContainerMain"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="141.5dp"
+            android:src="@drawable/gh_logo"
+            android:layout_marginTop="60dp"
+            android:id="@+id/imaLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_height="171dp" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imaLogo"
+            android:textColor="@android:color/white"
+            android:id="@+id/logoText"
+            android:text="@string/ghost_mode"
+            android:layout_centerHorizontal="true"
+            android:textSize="45sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textDes"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/logoText"
+            android:textColor="@android:color/white"
+            android:id="@+id/logoDescription"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/goghost"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/logoDescription"
+            android:text="GoGhost"/>
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="155dp"
+                android:text="@string/login"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/login"
+                android:background="@drawable/button_border"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="155dp"
+                android:text="@string/Singup"
+                android:textColor="@android:color/white"
+                android:layout_marginRight="5dp"
+                android:id="@+id/register"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/button_border"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </FrameLayout>
+
+</FrameLayout>
